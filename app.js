@@ -30,3 +30,4 @@ app.get('/',(req,res)=>{
 
 server.listen(3000)
 
+module.exports = app;
