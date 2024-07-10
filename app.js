@@ -2,9 +2,11 @@ const socketIO = require('socket.io')
 const express= require('express')
 const app = express()
 const http = require('http')
+var path = require('path');
 const { Socket } = require('dgram')
 
-app.set('view engine','ejs')
+app.set('view engine','ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 
 const server = http.createServer(app)
