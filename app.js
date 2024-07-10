@@ -2,7 +2,6 @@ const socketIO = require('socket.io')
 const express= require('express')
 const app = express()
 const http = require('http')
-const serverless = require("serverless-http");
 const { Socket } = require('dgram')
 
 app.set('view engine','ejs')
@@ -29,4 +28,3 @@ app.get('/',(req,res)=>{
 
 server.listen(3000)
 
-module.exports.handler = serverless(app);
